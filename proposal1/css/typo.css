@@ -1,9 +1,26 @@
 /* TYPOGRAPHY */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+	margin-left: 50px;
+	margin-top: 70px;
+	background-color: #1b1f24;
+	color: white;
+}
+
 h1 {
+	font-family: "Poppins", sans-serif;
+	font-style: italic;
+	font-size: 33pt;
 }
 
 h2 {
+	font-family: "Poppins", sans-serif;
+	font-style: italic;
+	font-size: 18pt;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -19,7 +36,43 @@ h6 {
 }
 
 p {
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	color: lightgray;
+}
+.loremIpsum {
+	margin-bottom: 70px;
+	margin-right: 450px;
 }
 
-a {
+.loremIpsum a {
+	color: turquoise;
+	text-decoration: none;
+}
+
+.btn-primary {
+	color: white;
+	text-decoration: none;
+	background-color: #80278f;
+	padding: 15px;
+	border-radius: 15px;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 14pt;
+}
+
+.btn-primary:hover {
+	border: 5px solid #ff7f27;
+}
+.btn-secondary {
+	color: white;
+	text-decoration: none;
+	background-color: #80278f;
+	padding: 15px;
+	border-radius: 15px;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 14pt;
+	border: 5px solid #ff7f27;
+
+	margin-left: 40px;
 }
