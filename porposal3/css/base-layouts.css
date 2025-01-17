@@ -1,0 +1,9 @@
+/* BASE LAYOUT FLEXBOX */
+@import url('https://fonts.cdnfonts.com/css/aeogo-form');
+
+
+body {
+	margin-left: 50px;
+	margin-top: 70px;
+	background-color:black; /*ook wit*/
+}
