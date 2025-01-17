@@ -1,25 +1,42 @@
 /* TYPOGRAPHY */
+ @import url('https://fonts.cdnfonts.com/css/aeogo-form');
+ @import url(https://db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le);
 
+                
 h1 {
+    font-family: aeogo form;
+    color: white; /*zwart ook */ 
 }
 
 h2 {
+    font-family: aeogo form;
+    color: white;  /* zwart ook */
+    
+
 }
 
 h3 {
+    font-family: aeogo form;
+    color: white; /* ook zwart */
 }
 
-h4 {
-}
-
-h5 {
-}
-
-h6 {
-}
 
 p {
+    font-family: Microsoft Tai Le;
+    color: white;
+    text-align: left;
+    margin-right: 500px;
+
 }
 
 a {
+    text-decoration: none;
+    font-family: aeogo form;
+    color: white;
+    transition: color 0,3s;
+
+}
+
+a:hover {
+    color: #2B4E96;
 }
