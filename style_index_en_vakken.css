@@ -422,7 +422,8 @@ body {
 	/* Adjust padding to reduce space around content */
 	text-align: left;
 	margin-right: 10%;
-	
+	margin-top: 40px;
+	margin-bottom: 40px;
 
 }
 
@@ -518,6 +519,7 @@ body {
 	flex-direction: row-reverse;
 	/* Reverse the layout for alternating images */
 	margin-left: 10%;
+	margin-top: -40px;
 
 }
 
