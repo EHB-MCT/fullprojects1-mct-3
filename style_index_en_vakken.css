@@ -7,7 +7,8 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden; /* Prevent horizontal scrolling */
+	overflow-x: hidden;
+	/* Prevent horizontal scrolling */
 }
 
 h1 {
@@ -96,6 +97,7 @@ a {
 	color: #bf2126;
 	list-style: none;
 }
+
 a.active {
 	color: #bf2126;
 }
@@ -138,38 +140,54 @@ body {
 
 /* Scrolling Banner Styles */
 .scrolling-banner {
-	background-color: #bf2126; /* Red background for the banner */
-	color: white; /* White text color */
-	width: 100%; /* Full width */
-	overflow: hidden; /* Hide text that moves outside the banner */
-	padding: 15px 0; /* Add padding inside the banner */
-	box-sizing: border-box; /* Include padding in the width calculation */
-	z-index: 1000; /* Make sure it appears above other content */
+	background-color: #bf2126;
+	/* Red background for the banner */
+	color: white;
+	/* White text color */
+	width: 100%;
+	/* Full width */
+	overflow: hidden;
+	/* Hide text that moves outside the banner */
+	padding: 15px 0;
+	/* Add padding inside the banner */
+	box-sizing: border-box;
+	/* Include padding in the width calculation */
+	z-index: 1000;
+	/* Make sure it appears above other content */
 	position: relative;
 }
 
 .scrolling-text {
-	display: flex; /* Using flex to line up the text side by side */
-	width: 100%; /* Full width of the banner */
-	animation: scroll-left 12.5s linear infinite; /* Infinite scroll animation */
+	display: flex;
+	/* Using flex to line up the text side by side */
+	width: 100%;
+	/* Full width of the banner */
+	animation: scroll-left 12.5s linear infinite;
+	/* Infinite scroll animation */
 }
 
 .scrolling-text span {
-	white-space: nowrap; /* Prevent text wrapping */
-	flex-shrink: 0; /* Prevent shrinking */
+	white-space: nowrap;
+	/* Prevent text wrapping */
+	flex-shrink: 0;
+	/* Prevent shrinking */
 }
 
 .nav-link.active {
 	color: #bf2126;
 	font-weight: bold;
 }
+
 /* Keyframes for smooth scrolling animation */
 @keyframes scroll-left {
 	0% {
-		transform: translateX(100%); /* Start from the right */
+		transform: translateX(100%);
+		/* Start from the right */
 	}
+
 	100% {
-		transform: translateX(-100%); /* Move the text completely off to the left */
+		transform: translateX(-100%);
+		/* Move the text completely off to the left */
 	}
 }
 
@@ -177,10 +195,13 @@ body {
 .header {
 	width: 100%;
 	display: flex;
-	justify-content: space-between; /* Space between logo and navigation */
-	align-items: center; /* Vertically center content */
+	justify-content: space-between;
+	/* Space between logo and navigation */
+	align-items: center;
+	/* Vertically center content */
 	background-color: black;
-	padding: 10px 50px; /* Adjust spacing around header */
+	padding: 10px 50px;
+	/* Adjust spacing around header */
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 60px;
@@ -192,7 +213,8 @@ body {
 }
 
 .header p {
-	margin-left: 0px; /* Spacing for navigation text */
+	margin-left: 0px;
+	/* Spacing for navigation text */
 }
 
 .menu a {
@@ -202,13 +224,15 @@ body {
 /* Add hover effect for header and footer links */
 .menu a:hover,
 .footer-links a:hover {
-	color: #bf2126; /* Change color on hover */
+	color: #bf2126;
+	/* Change color on hover */
 }
 
 /* Add active class styles for the header and footer links */
 .menu a.active,
 .footer-links a.active {
-	color: #bf2126; /* Make the link red when it's active */
+	color: #bf2126;
+	/* Make the link red when it's active */
 }
 
 /* Optionally, you can also change the background color of the active link */
@@ -219,12 +243,15 @@ body {
 
 .scrolling-banner {
 	/* Adjust the height of the banner */
-	background-color: #bf2126; /* Change the background color of the banner */
+	background-color: #bf2126;
+	/* Change the background color of the banner */
 }
 
 .scrolling-text {
-	font-size: 16px; /* Adjust font size for readability */
-	color: white; /* Change text color to white */
+	font-size: 16px;
+	/* Adjust font size for readability */
+	color: white;
+	/* Change text color to white */
 }
 
 /* Hero Section */
@@ -232,7 +259,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 40px 20px; /* Add spacing around the hero */
+	margin: 40px 20px;
+	/* Add spacing around the hero */
 }
 
 .hero-text {
@@ -245,12 +273,14 @@ body {
 	width: 500px;
 	height: auto;
 }
+
 .carousel-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	max-width: 1200px; /* Adjust the max width to your preference */
+	max-width: 1200px;
+	/* Adjust the max width to your preference */
 	margin: 0 auto;
 	position: relative;
 }
@@ -274,8 +304,10 @@ body {
 }
 
 .carousel-item.active {
-	color: #bf2126; /* Red color for active item */
-	font-weight: bold; /* Optional: makes the text bold */
+	color: #bf2126;
+	/* Red color for active item */
+	font-weight: bold;
+	/* Optional: makes the text bold */
 }
 
 .carousel-text {
@@ -315,7 +347,8 @@ body {
 	font-family: "Arial", sans-serif;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 25pt; /* Approximately 33.33px */
+	font-size: 25pt;
+	/* Approximately 33.33px */
 	color: white;
 	line-height: 1.2;
 
@@ -323,14 +356,18 @@ body {
 }
 
 #carouselTitle {
-	line-height: 1.5; /* Adjust line spacing */
+	line-height: 1.5;
+	/* Adjust line spacing */
 	/* Font size for readability */
-	text-align: left; /* Align text as needed */
+	text-align: left;
+	/* Align text as needed */
 	margin-bottom: 20px;
 	font-family: "Bodoni MT", serif;
 	font-style: italic;
-	font-weight: 900; /* Black weight */
-	font-size: 16pt; /* Approximately 21.33px */
+	font-weight: 900;
+	/* Black weight */
+	font-size: 16pt;
+	/* Approximately 21.33px */
 	margin-top: 20px;
 }
 
@@ -348,22 +385,29 @@ body {
 }
 
 .left {
-	left: 40%; /* Move the left arrow closer to the image */
+	left: 40%;
+	/* Move the left arrow closer to the image */
 }
 
 .right {
-	right: -10%; /* Move the right arrow closer to the image */
+	right: -10%;
+	/* Move the right arrow closer to the image */
 }
 
 #carouselImage[data-index="0"] {
-	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateY(-10px);
+	/* Example adjustment for the second image */
 	transform: translateX(100px);
 }
+
 #carouselImage[data-index="1"] {
-	transform: translateY(-50px); /* Example adjustment for the second image */
-	transform: translateX(120px); /* Example horizontal adjustment */
+	transform: translateY(-50px);
+	/* Example adjustment for the second image */
+	transform: translateX(120px);
+	/* Example horizontal adjustment */
 	transform: scale(1);
 }
+
 #carouselImage[data-index="2"] {
 	/* Adjust horizontal alignment if necessary */
 	transform: translateY(-70px) translateX(200px) scale(0.6);
@@ -373,40 +417,44 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 15px; /* Reduced gap between text and image */
-	padding: 10px; /* Adjust padding to reduce space around content */
+	gap: 15px;
+	/* padding: 10px; */
+	/* Adjust padding to reduce space around content */
 	text-align: left;
 	margin-right: 10%;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
-/* .other-image img {
-	max-width: 800px;
+.other-image img {
+	max-width: 400px;
 	height: auto;
 	object-fit: cover;
-	margin-left: 20%;
-} */
-
-.other-imageweg img {
-	width: 100%;
-	max-width: 400px;
-	margin-left: 20%;
+	margin-left: 24%;
 }
 
-/* Stijl voor de tweede afbeelding */
-.other-image img:nth-child(1) {
+/* Stijl voor de eerste afbeelding (Vreem Ding no.1) */
+.other .other-imageweg img[src="images/Vreem Ding no.1.png"] {
+	width: 100%;
+	max-width: 400px;
+	margin-left: 40%;
+}
+
+/* Stijl voor de tweede afbeelding (Camera) */
+.other .other-image img[src="images/Camera.png"] {
 	width: 100%;
 	max-width: 800px;
 	margin-left: 20%;
 }
 
-/* Stijl voor de derde afbeelding */
+/* Stijl voor de derde afbeelding (Computer) */
 .other .other-image img[src="images/Computer.png"] {
 	width: 100%;
-	max-width: 500px;
-	margin-left: 20%;
+	max-width: 450px;
+	margin-left: 6%;
 }
 
-/* Stijl voor de vierde afbeelding */
+/* Stijl voor de vierde afbeelding (Design) */
 .other .other-image img[src="images/designright.png"] {
 	width: 100%;
 	max-width: 600px;
@@ -420,47 +468,62 @@ body {
 }
 
 .bigtext {
-	display: flex; /* Ensures the children are aligned in a row */
-	align-items: flex-start; /* Adjust vertical alignment */
-	justify-content: flex-start; /* Aligns items to the left initially */
+	display: flex;
+	/* Ensures the children are aligned in a row */
+	align-items: flex-start;
+	/* Adjust vertical alignment */
+	justify-content: flex-start;
+	/* Aligns items to the left initially */
 	margin-top: 50px;
 	margin-bottom: 200px;
 }
+
 .bigtext-right {
-	margin-left: 190px; /* Adjust the value to move it further to the right */
-	text-align: left; /* Ensure text alignment is consistent */
+	margin-left: 160px;
+	/* Adjust the value to move it further to the right */
+	text-align: left;
+	/* Ensure text alignment is consistent */
+	width: 48%;
 }
+
 .bigtext-left {
-	margin-left: 200px;
+	width: 35%;
 }
 
 /* Stack text and image vertically on smaller screens */
 @media (max-width: 768px) {
 	.other {
 		flex-direction: column;
-		gap: 5px; /* Reduce the gap further for mobile */
+		gap: 5px;
+		/* Reduce the gap further for mobile */
 	}
 
 	.other-image img {
-		width: 100%; /* Full width on small screens */
-		max-width: 400px; /* Set a max width for the image */
+		width: 100%;
+		/* Full width on small screens */
+		max-width: 400px;
+		/* Set a max width for the image */
 	}
 }
 
 .reverse {
-	flex-direction: row-reverse; /* Reverse the layout for alternating images */
+	flex-direction: row-reverse;
+	/* Reverse the layout for alternating images */
 	margin-left: 10%;
-	margin-bottom: 80px;
+	margin-top: -40px;
 }
+
 .reverse .footer {
 	background-color: black;
 	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px 0; /* Add padding to the footer */
+	padding: 20px 0;
+	/* Add padding to the footer */
 	text-align: center;
-	gap: 20px; /* Space between items */
+	gap: 20px;
+	/* Space between items */
 }
 
 .logo1 {
@@ -487,10 +550,13 @@ footer {
 	padding: 30px 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between; /* Ensures equal spacing between items */
-	align-items: flex-start; /* Aligns items to the top */
+	justify-content: space-between;
+	/* Ensures equal spacing between items */
+	align-items: flex-start;
+	/* Aligns items to the top */
 	text-align: left;
-	flex-wrap: nowrap; /*Prevents wrapping of items */
+	flex-wrap: nowrap;
+	/*Prevents wrapping of items */
 }
 
 footer h3 {
@@ -553,18 +619,21 @@ p {
 	margin-right: 150px;
 	margin-top: 20px;
 }
+
 .navigatie a {
 	display: block;
 	margin-bottom: 5px;
 }
 
 #carouselImage[data-index="0"] {
-	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateY(-10px);
+	/* Example adjustment for the second image */
 	transform: translateX(100px);
 }
 
 #carouselImage[data-index="1"] {
-	transform: translateY(-100px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
+	transform: translateY(-100px) translateX(120px) scale(1.2);
+	/* Example adjustment for the second image */
 }
 
 #carouselImage[data-index="2"] {
@@ -591,7 +660,8 @@ p {
 /* Add active class styles for the header and footer links */
 .menu a.active,
 .footer-links a.active {
-	color: #bf2126; /* Make the link red when it's active */
+	color: #bf2126;
+	/* Make the link red when it's active */
 }
 
 .navigation ul {
@@ -614,16 +684,20 @@ p {
 /* Logo */
 
 .logo {
-	flex: 1; /* Push the logo to the left */
+	flex: 1;
+	/* Push the logo to the left */
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 }
 
 .logo img {
-	height: 50px; /* Consistent logo size */
-	max-width: none; /* Ensure proper scaling */
-	object-fit: contain; /* Maintain the aspect ratio */
+	height: 50px;
+	/* Consistent logo size */
+	max-width: none;
+	/* Ensure proper scaling */
+	object-fit: contain;
+	/* Maintain the aspect ratio */
 	padding-right: 160px;
 	padding-left: 170px;
 
@@ -660,24 +734,33 @@ p {
 }
 
 .full-width-video {
-	width: 100%; /* Full width */
-	height: auto; /* Maintain aspect ratio */
-	display: block; /* Remove any inline gaps */
-	object-fit: cover; /* Ensure the video covers the area */
-	max-width: 100%; /* Prevent video from overflowing its container */
+	width: 100%;
+	/* Full width */
+	height: auto;
+	/* Maintain aspect ratio */
+	display: block;
+	/* Remove any inline gaps */
+	object-fit: cover;
+	/* Ensure the video covers the area */
+	max-width: 100%;
+	/* Prevent video from overflowing its container */
 }
 
 .carousel-button {
 	font-size: 16px;
 	padding: 15px 30px;
-	background-color: #bf2126; /* Red button background */
-	color: white; /* White text */
+	background-color: #bf2126;
+	/* Red button background */
+	color: white;
+	/* White text */
 	border: none;
 	border-radius: 5px;
-	font-weight: bold; /* Bold letters */
+	font-weight: bold;
+	/* Bold letters */
 	cursor: pointer;
 	text-align: center;
-	margin-top: 20px; /* Space between the text and the button */
+	margin-top: 20px;
+	/* Space between the text and the button */
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 		"Times New Roman", serif;
 
@@ -687,7 +770,8 @@ p {
 }
 
 .carousel-button:hover {
-	background-color: darkred; /* Darker red on hover */
+	background-color: darkred;
+	/* Darker red on hover */
 }
 
 /* Mobile Responsive CSS */
@@ -700,7 +784,8 @@ p {
 	}
 
 	p {
-		line-height: 1.7; /* 1.6 is a good default for readability */
+		line-height: 1.7;
+		/* 1.6 is a good default for readability */
 		font-size: 1.2;
 	}
 
@@ -710,7 +795,8 @@ p {
 	h4,
 	h5,
 	h6 {
-		line-height: 1.4; /* Adjust line height for headings */
+		line-height: 1.4;
+		/* Adjust line height for headings */
 		font-family: "Bodoni MT", "Didot", "Didot LT STD", "Hoefler Text", Garamond,
 			"Times New Roman", serif;
 	}
@@ -724,7 +810,8 @@ p {
 	}
 
 	.vakken-page .other .other-imageweg img {
-		display: none; /* Hide the image */
+		display: none;
+		/* Hide the image */
 	}
 
 	.vakken-page .other .other-text.firstvakken h3 {
@@ -752,8 +839,10 @@ p {
 			"Times New Roman", serif;
 		font-style: italic;
 	}
+
 	.other.reverse h3 {
-		font-size: 26pt; /* Adjust the size for smaller screens */
+		font-size: 26pt;
+		/* Adjust the size for smaller screens */
 		font-family: "Bodoni MT", "Didot", "Didot LT STD", "Hoefler Text", Garamond,
 			"Times New Roman", serif;
 		font-style: italic;
@@ -761,50 +850,67 @@ p {
 
 	/* Scrolling Banner */
 	.scrolling-banner {
-		background-color: #bf2126; /* Red background for the banner */
-		color: white; /* White text color */
-		width: 100%; /* Full width */
-		overflow: hidden; /* Hide text that moves outside the banner */
-		padding: 15px 0; /* Add padding inside the banner */
-		box-sizing: border-box; /* Include padding in the width calculation */
-		z-index: 1000; /* Make sure it appears above other content */
+		background-color: #bf2126;
+		/* Red background for the banner */
+		color: white;
+		/* White text color */
+		width: 100%;
+		/* Full width */
+		overflow: hidden;
+		/* Hide text that moves outside the banner */
+		padding: 15px 0;
+		/* Add padding inside the banner */
+		box-sizing: border-box;
+		/* Include padding in the width calculation */
+		z-index: 1000;
+		/* Make sure it appears above other content */
 		position: relative;
 	}
 
 	.scrolling-text {
-		display: flex; /* Using flex to line up the text side by side */
-		width: 100%; /* Full width of the banner */
-		animation: scroll-left 9s linear infinite; /* Infinite scroll animation */
+		display: flex;
+		/* Using flex to line up the text side by side */
+		width: 100%;
+		/* Full width of the banner */
+		animation: scroll-left 9s linear infinite;
+		/* Infinite scroll animation */
 	}
 
 	/* Header */
 	.header {
 		display: flex;
-		justify-content: space-between; /* Logo to the left, nav to the right */
-		align-items: center; /* Vertically center items */
+		justify-content: space-between;
+		/* Logo to the left, nav to the right */
+		align-items: center;
+		/* Vertically center items */
 		padding: 10px 20px;
 	}
 
 	.logo img {
-		height: 70px; /* Adjust logo size for tablets */
+		height: 70px;
+		/* Adjust logo size for tablets */
 		padding-right: 0;
 	}
 
 	.menu {
-		display: flex; /* Ensure links are displayed horizontally */
-		gap: 20px; /* Space between links */
+		display: flex;
+		/* Ensure links are displayed horizontally */
+		gap: 20px;
+		/* Space between links */
 		margin-top: 0;
 	}
 
 	.menu a {
-		font-size: 16px; /* Font size for tablet */
+		font-size: 16px;
+		/* Font size for tablet */
 		color: #000;
 		text-decoration: none;
 	}
 
 	/* Hero Section */
 	.hero {
-		flex-direction: column; /* Stack text and image vertically */
+		flex-direction: column;
+		/* Stack text and image vertically */
 		margin: 20px;
 	}
 
@@ -814,8 +920,10 @@ p {
 	}
 
 	.hero-image img {
-		max-width: 90%; /* Reduce image size */
-		height: auto; /* Maintain aspect ratio */
+		max-width: 90%;
+		/* Reduce image size */
+		height: auto;
+		/* Maintain aspect ratio */
 	}
 
 	/* Carousel */
@@ -834,7 +942,8 @@ p {
 	}
 
 	#carouselImage[data-index="1"] {
-		transform: translateY(-10px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
+		transform: translateY(-10px) translateX(120px) scale(1.2);
+		/* Example adjustment for the second image */
 	}
 
 	#carouselImage[data-index="2"] {
@@ -855,52 +964,69 @@ p {
 
 	.carousel-text {
 		text-align: center;
-		padding: 10px; /* Add padding for readability */
+		padding: 10px;
+		/* Add padding for readability */
 	}
 
 	.arrow {
-		font-size: 24px; /* Reduce size of arrows */
-		padding: 10px; /* Adjust position */
+		font-size: 24px;
+		/* Reduce size of arrows */
+		padding: 10px;
+		/* Adjust position */
 	}
 
 	/* Other Sections */
 	.other {
-		flex-direction: column; /* Stack text and image vertically */
-		text-align: center; /* Center-align text */
+		flex-direction: column;
+		/* Stack text and image vertically */
+		text-align: center;
+		/* Center-align text */
 	}
 
 	.other-image img {
-		width: 80%; /* Reduce image size */
-		margin: 20px auto; /* Center image */
+		width: 80%;
+		/* Reduce image size */
+		margin: 20px auto;
+		/* Center image */
 	}
 
 	.other-text {
-		padding: 0 20px; /* Add side padding for better spacing */
+		padding: 0 20px;
+		/* Add side padding for better spacing */
 		text-align: center;
 	}
 
 	.other-text.first-other-text {
-		text-align: center; /* Example: Change alignment */
+		text-align: center;
+		/* Example: Change alignment */
 		margin-left: 40px;
 		width: 110%;
 	}
 
 	.bigtext {
-		flex-direction: column; /* Stack text blocks */
-		text-align: center; /* Center-align text */
+		flex-direction: column;
+		/* Stack text blocks */
+		text-align: center;
+		/* Center-align text */
 	}
 
 	.bigtext-right,
 	.bigtext-left {
-		margin: 20px auto; /* Add spacing between elements */
+		margin: 20px auto;
+		/* Add spacing between elements */
 	}
+
 	.bigtext-left {
-		margin: 10px auto; /* Add spacing and center the text */
-		width: 80%; /* Make the blocks smaller for mobile */
+		margin: 10px auto;
+		/* Add spacing and center the text */
+		width: 80%;
+		/* Make the blocks smaller for mobile */
 	}
+
 	.bigtext h3 {
 		font-size: 26pt;
 	}
+
 	footer {
 		flex-direction: column;
 		align-items: center;
@@ -910,20 +1036,25 @@ p {
 	.footer-links {
 		text-align: center;
 	}
+
 	.logo1 {
 		margin: 50px auto;
 	}
+
 	.contact-footer h3 {
 		margin-left: 30px;
 	}
+
 	.contact-footer {
 		margin: 150px;
 		margin-left: 160px;
 	}
+
 	.contact-footer p {
 		padding: 20px;
 		text-align: center;
 	}
+
 	.social-icons {
 		margin: 100px 0;
 		margin-left: 0;
@@ -952,31 +1083,39 @@ p {
 	h4,
 	h5,
 	h6 {
-		font-size: 20px; /* Scale down headings */
+		font-size: 20px;
+		/* Scale down headings */
 	}
 
 	p {
-		font-size: 18px; /* Smaller paragraph font size */
+		font-size: 18px;
+		/* Smaller paragraph font size */
 		font-weight: 200px;
 	}
+
 	.other.reverse {
 		width: 90%;
 		margin-left: 20px;
 	}
 
 	.carousel-text h3 {
-		font-size: 10px; /* Reduce carousel heading size */
+		font-size: 10px;
+		/* Reduce carousel heading size */
 	}
 
 	.carousel-button {
-		font-size: 20px; /* Adjust button text size */
-		padding: 10px 20px; /* Adjust button size */
+		font-size: 20px;
+		/* Adjust button text size */
+		padding: 10px 20px;
+		/* Adjust button size */
 		width: 50%;
 	}
 
 	.other-image img {
-		width: 70%; /* Full width */
-		max-width: none; /* Remove max-width restriction */
+		width: 70%;
+		/* Full width */
+		max-width: none;
+		/* Remove max-width restriction */
 	}
 
 	.carousel-image img {
@@ -987,44 +1126,55 @@ p {
 	}
 
 	.left {
-		left: 40%; /* Move the left arrow closer to the image */
+		left: 40%;
+		/* Move the left arrow closer to the image */
 	}
 
 	.right {
-		right: 0%; /* Move the right arrow closer to the image */
+		right: 0%;
+		/* Move the right arrow closer to the image */
 	}
+
 	#carouselDescription {
 		font-size: 15pt;
 		margin-left: 100px;
 	}
+
 	#carouselTitle {
 		margin-left: 100px;
 		font-size: 10pt;
 	}
 
 	.carousel-item:nth-child(1) .carousel-image img {
-		margin-right: 600px; /* Shift slightly to the right */
+		margin-right: 600px;
+		/* Shift slightly to the right */
 	}
 
 	/* Adjust the second image in the carousel */
 	.carousel-item:nth-child(2) .carousel-image img {
-		margin-right: 300px; /* Shift slightly to the left */
+		margin-right: 300px;
+		/* Shift slightly to the left */
 	}
 
 	/* Adjust the third image in the carousel */
 	.carousel-item:nth-child(3) .carousel-image img {
-		margin-right: 50px; /* Keep centered */
-		transform: scale(1.1); /* Optional: Slightly enlarge */
+		margin-right: 50px;
+		/* Keep centered */
+		transform: scale(1.1);
+		/* Optional: Slightly enlarge */
 	}
 
 	/* Adjust the fourth image in the carousel */
 	.carousel-item:nth-child(4) .carousel-image img {
-		margin-left: 15px; /* Shift to the right */
-		transform: scale(0.9); /* Optional: Slightly reduce size */
+		margin-left: 15px;
+		/* Shift to the right */
+		transform: scale(0.9);
+		/* Optional: Slightly reduce size */
 	}
 
 	#carouselImage[data-index="1"] {
-		transform: translateY(-10px) translateX(80px) scale(1.2); /* Example adjustment for the second image */
+		transform: translateY(-10px) translateX(80px) scale(1.2);
+		/* Example adjustment for the second image */
 	}
 
 	#carouselImage[data-index="2"] {
@@ -1047,6 +1197,7 @@ p {
 		text-decoration: none;
 		margin-top: -40px;
 	}
+
 	.menu a {
 		margin-top: 63px;
 		color: white;
