@@ -447,8 +447,7 @@ footer a {
 }
 
 footer a:hover {
-	text-decoration: underline;
-	color: white;
+	text-decoration: none;
 }
 
 .logo1 {
@@ -461,11 +460,6 @@ footer a:hover {
 .contact-footer {
 	margin-left: 600px;
 	margin-top: -100px;
-}
-
-.contact-footer a:hover {
-	text-decoration: underline;
-	color: white;
 }
 .contact-footer h3,
 p {
@@ -1012,10 +1006,11 @@ p {
 	.logo img {
 		max-width: none;
 		max-height: none;
-		height: 80px;
+		height: 35px;
 		width: auto;
-		padding-top: 60px;
-		margin-left: -100px;
+		padding-top: -30px;
+		margin-left: -120px;
+		margin-right: -20px;
 	}
 
 	/* Navigation Links */
@@ -1023,6 +1018,59 @@ p {
 		display: flex;
 		gap: 20px;
 		margin-right: 0px;
-		margin-left: 20px;
+		margin-left: 30px;
+		margin-top: -85px;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.menu a {
+		color: white;
+		text-decoration: none;
+		font-size: 12pt;
+		font-weight: 100;
+		margin-bottom: -50px;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
+	.menu a.active {
+		color: #bf2126;
+		font-weight: 560;
+	}
+
+	a.active {
+		color: red;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
+	/* Logo */
+
+	.logo {
+		flex: 1; /* Push the logo to the left */
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-right: 0px;
+		padding-left: 86px;
+	}
+
+	.logo img {
+		height: 35px; /* Consistent logo size */
+		max-width: none; /* Ensure proper scaling */
+		object-fit: contain; /* Maintain the aspect ratio */
+		padding-right: 0px;
+		padding-left: 100px;
+		margin-bottom: -30px;
+		width: auto;
 	}
 }
