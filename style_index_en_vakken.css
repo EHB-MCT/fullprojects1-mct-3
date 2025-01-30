@@ -488,11 +488,11 @@ p {
 .navigatie a {
 	display: block;
 	margin-bottom: 5px;
-	margin-left: -300px;
+	margin-left: -150px;
 }
 
 .navigatie h3 {
-	margin-left: -300px;
+	margin-left: -150px;
 }
 
 #carouselImage[data-index="0"] {
