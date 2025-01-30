@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			title: "RAMON DE&nbsp;RAES STUDENT&nbsp;2MCT",
 			description:
 				"''Een boeiende en veelzijdige studierichting waarin je een brede waaier aan vakken verkent. Ideaal om je interesses te ontdekken en jezelf breed te ontwikkelen!''",
-			textY: "90%",
 		},
 		{
 			src: "images/senior_3.png",
@@ -49,9 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		{
 			src: "images/Docent.png",
-			title: "KATHY HAEMERS GASTDOCENT&nbsp;2MCT",
+			title: "SOPHIA RAHMOUN STUDENT&nbsp;2MCT",
 			description:
-				"''Gastdocent UX Service Design Heerlijk om mijn rol in een agency te combineren met lesgeven op EHB. Digital design evolueert razendsnel, ik breng ervaring uit de praktijk mee, en ontmoet elk jaar studenten met slimme nieuwe ideeën, wie weet veelbelovende collega's in de toekomst.''",
+				"''Een brede en goed gestructureerde opleiding waarin je veel ervaring opdoet in diverse domeinen. Je leert in een fijne omgeving met enthousiaste medestudenten en inspirerende docenten die je motiveren om het beste uit jezelf te halen!''",
 		},
 	];
 
@@ -108,24 +107,3 @@ function updateCarousel(index) {
 		".carousel-description"
 	).innerText;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
