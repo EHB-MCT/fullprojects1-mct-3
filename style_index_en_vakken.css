@@ -379,38 +379,42 @@ body {
 	margin-right: 10%;
 }
 
-/* .other-image img {
-	max-width: 800px;
+ .other-image img {
+	max-width: 400px;
 	height: auto;
 	object-fit: cover;
-	margin-left: 20%;
-} */
+	margin-left: 24%;
+} 
 
-.other-imageweg img {
-	width: 100%;
-	max-width: 400px;
-	margin-left: 20%;
+
+
+/* Stijl voor de eerste afbeelding (Vreem Ding no.1) */
+.other .other-imageweg img[src="images/Vreem Ding no.1.png"] {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 40%;
 }
-
-/* Stijl voor de tweede afbeelding */
-.other-image img:nth-child(1) {
-	width: 100%;
-	max-width: 800px;
-	margin-left: 20%;
+ 
+/* Stijl voor de tweede afbeelding (Camera) */
+.other .other-image img[src="images/Camera.png"] {
+    width: 100%;
+    max-width: 800px;
+    margin-left: 20%;
+   
 }
-
-/* Stijl voor de derde afbeelding */
+ 
+/* Stijl voor de derde afbeelding (Computer) */
 .other .other-image img[src="images/Computer.png"] {
-	width: 100%;
-	max-width: 500px;
-	margin-left: 20%;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 6%;
 }
-
-/* Stijl voor de vierde afbeelding */
+ 
+/* Stijl voor de vierde afbeelding (Design) */
 .other .other-image img[src="images/designright.png"] {
-	width: 100%;
-	max-width: 600px;
-	margin-left: 10%;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
 }
 
 .other-text,
@@ -427,11 +431,18 @@ body {
 	margin-bottom: 200px;
 }
 .bigtext-right {
-	margin-left: 190px; /* Adjust the value to move it further to the right */
+	margin-left: 160px; /* Adjust the value to move it further to the right */
 	text-align: left; /* Ensure text alignment is consistent */
+	width: 48%;
 }
+
+
+
+
+
 .bigtext-left {
-	margin-left: 200px;
+	
+	width: 35%;
 }
 
 /* Stack text and image vertically on smaller screens */
