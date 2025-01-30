@@ -1,139 +1,142 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-.wrapper {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: -10%;
-}
-/* Normalize */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: black;
-	font-family: "Inter", sans-serif;
-	color: white;
-	height: 0px;
-}
-
-h1 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 48pt;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h2 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 40px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h3 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 32px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h4 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 24px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h5 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 16px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h6 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 8px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #bf2126;
-	font-size: 20px;
-	line-height: 1.4;
-}
-
-a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	text-decoration: none;
-	color: #bf2126;
-	list-style: none;
-}
-
-a.active {
-	color: red;
-}
-
-/* Scrolling Banner Styles */
-.scrolling-banner {
-	/* margin-bottom: 100px; */
-	background-color: #bf2126;
-	color: white;
-	width: 100%;
-	overflow: hidden;
-	white-space: nowrap; /* Prevent text wrapping */
-	padding: 15px 0;
-	box-sizing: border-box;
-	z-index: 1000; /* Make sure it appears above other content */
-}
-
-.scrolling-text {
-	display: inline-block; /* Allow text to scroll smoothly */
-	animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
-	padding-left: 100%; /* Start the text off-screen */
-}
-
-/* Keyframes for Scrolling Animation */
-@keyframes scroll-left {
-	from {
-		transform: translateX(0); /* Text starts in the visible area */
+@media screen and (min-width: 769px) {
+	.wrapper {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: -10%;
 	}
-	to {
-		transform: translateX(-100%); /* Text moves completely out of the banner */
+	/* Normalize */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 	}
-}
-/*
+
+	body {
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
+		height: 0px;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 48pt;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h2 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 40px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h3 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h4 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h5 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 16px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h6 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 8px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #bf2126;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none;
+		color: #bf2126;
+		list-style: none;
+	}
+
+	a.active {
+		color: red;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		/* margin-bottom: 100px; */
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
+	}
+	/*
 .header {
 	width: 100%;
 }
@@ -175,219 +178,220 @@ a.active {
 }
 */
 
-.header {
-	width: 100%;
-	margin-top: 70px;
-}
+	.header {
+		width: 100%;
+		margin-top: 70px;
+	}
 
-/* Navigation Bar */
+	/* Navigation Bar */
 
-.nav-bar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: black;
-	padding: 10px 150px;
-	margin-right: 70px;
-	text-decoration: none;
-	padding-left: 20px;
-}
+	.nav-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: black;
+		padding: 10px 150px;
+		margin-right: 70px;
+		text-decoration: none;
+		padding-left: 20px;
+	}
 
-/* Navigation Links */
-.menu {
-	display: flex;
-	gap: 160px;
-}
+	/* Navigation Links */
+	.menu {
+		display: flex;
+		gap: 160px;
+	}
 
-.menu a {
-	color: white;
-	text-decoration: none;
-	font-size: 18pt;
-	font-weight: 100;
-}
+	.menu a {
+		color: white;
+		text-decoration: none;
+		font-size: 18pt;
+		font-weight: 100;
+	}
 
-.menu a:hover {
-	text-decoration: none;
-	color: #bf2126;
-}
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
 
-.menu a.active {
-	color: #bf2126;
-	font-weight: 560;
-}
+	.menu a.active {
+		color: #bf2126;
+		font-weight: 560;
+	}
 
-a.active {
-	color: red;
-}
+	a.active {
+		color: red;
+	}
 
-.menu a:hover {
-	text-decoration: none;
-	color: #bf2126;
-}
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
 
-/* Logo */
+	/* Logo */
 
-.logo {
-	flex: 1; /* Push the logo to the left */
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	padding-right: 0px;
-	padding-left: 86px;
-}
+	.logo {
+		flex: 1; /* Push the logo to the left */
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-right: 0px;
+		padding-left: 86px;
+	}
 
-.logo img {
-	height: 50px; /* Consistent logo size */
-	max-width: none; /* Ensure proper scaling */
-	object-fit: contain; /* Maintain the aspect ratio */
-	padding-right: 0px;
-	padding-left: 100px;
-	width: auto;
-}
+	.logo img {
+		height: 50px; /* Consistent logo size */
+		max-width: none; /* Ensure proper scaling */
+		object-fit: contain; /* Maintain the aspect ratio */
+		padding-right: 0px;
+		padding-left: 100px;
+		width: auto;
+	}
 
-/* First Image */
+	/* First Image */
 
-.twinkle {
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-	margin-top: 100px;
-	margin-bottom: 40px;
-}
-.twinkleExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 200px;
-}
-.twinkleExtra p {
-	display: flex;
-	color: white;
-	text-align: left;
-	padding-top: 30px;
-	margin-left: 165px;
-	font-family: Arial, Helvetica, sans-serif;
-}
+	.twinkle {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+		margin-top: 100px;
+		margin-bottom: 40px;
+	}
+	.twinkleExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 200px;
+	}
+	.twinkleExtra p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 30px;
+		margin-left: 165px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 
-.twinkleExtra h1 {
-	display: flex;
-	text-align: left;
-	margin-left: -250px;
-	margin-top: 200px;
-	margin-bottom: 10px;
-	padding-left: 420px;
-	margin-right: 200px;
-}
+	.twinkleExtra h1 {
+		display: flex;
+		text-align: left;
+		margin-left: -250px;
+		margin-top: 200px;
+		margin-bottom: 10px;
+		padding-left: 420px;
+		margin-right: 200px;
+	}
 
-.twinkle img {
-	display: flex;
-	display: inline-block;
-	justify-content: start;
-	align-items: left;
-	width: 500px;
-	margin-left: 90px;
-	margin-right: 170px;
-}
+	.twinkle img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 500px;
+		margin-left: 90px;
+		margin-right: 170px;
+	}
 
-/* second image */
+	/* second image */
 
-.school {
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-}
-.schoolExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-}
-.schoolExtra p {
-	display: flex;
-	color: white;
-	text-align: left;
-	padding-top: 30px;
-	padding-left: 103px;
-	margin-right: 0px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.schoolExtra h1 {
-	display: flex;
-	justify-content: left;
-	text-align: left;
-	margin-left: 0px;
-	margin-top: 60px;
-	margin-left: 103px;
-	margin-bottom: 15px;
-	margin-right: 50px;
-}
+	.school {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.schoolExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.schoolExtra p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 30px;
+		padding-left: 103px;
+		margin-right: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.schoolExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 60px;
+		margin-left: 103px;
+		margin-bottom: 15px;
+		margin-right: 50px;
+	}
 
-.school img {
-	position: relative;
-	top: -180px;
-	justify-content: start;
-	align-items: left;
-	width: 1000px;
-	padding-left: 0px;
-	margin-right: 0px;
-	margin-left: 161px;
-}
+	.school img {
+		position: relative;
+		top: -180px;
+		justify-content: start;
+		align-items: left;
+		width: 1000px;
+		padding-left: 0px;
+		margin-right: 0px;
+		margin-left: 161px;
+	}
 
-/* third image */
+	/* third image */
 
-.studeren {
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 60px;
-}
-.studerenExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 0px;
-}
-.studerenExtra p {
-	position: relative;
-	top: -80px;
-	display: flex;
-	color: white;
-	text-align: left;
-	padding-top: 30px;
-	margin-left: 250px;
-	font-family: Arial, Helvetica, sans-serif;
-	margin-bottom: 0px;
-}
-.studerenExtra h1 {
-	position: relative;
-	top: -80px;
-	display: flex;
-	justify-content: right;
-	text-align: right;
-	margin-left: 260px;
-	margin-top: 0px;
-	padding-left: 400px;
-	height: 40px;
-	width: 190px;
-}
+	.studeren {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 60px;
+	}
+	.studerenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 0px;
+	}
+	.studerenExtra p {
+		position: relative;
+		top: -80px;
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 30px;
+		margin-left: 250px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom: 0px;
+	}
+	.studerenExtra h1 {
+		position: relative;
+		top: -80px;
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 260px;
+		margin-top: 0px;
+		padding-left: 400px;
+		height: 40px;
+		width: 190px;
+	}
 
-.studeren img {
-	display: flex;
-	position: relative;
-	top: -250px;
-	display: inline-block;
-	justify-content: start;
-	align-items: left;
-	width: 600px;
-	margin-left: 70px;
-	margin-top: 0px;
-	margin-right: 190px;
-	margin-bottom: 0px;
+	.studeren img {
+		display: flex;
+		position: relative;
+		top: -250px;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 600px;
+		margin-left: 70px;
+		margin-top: 0px;
+		margin-right: 190px;
+		margin-bottom: 0px;
+	}
 }
 
 /* Footer */
@@ -476,10 +480,23 @@ p {
 		box-sizing: border-box;
 	}
 
+	html,
 	body {
 		background-color: black;
 		font-family: "Inter", sans-serif;
 		color: white;
+		height: 0px;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32pt;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
 	}
 
 	h2 {
@@ -537,21 +554,11 @@ p {
 		color: #bf2126;
 	}
 
-	h1 {
-		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-			"Times New Roman", serif;
-		font-size: 24px;
-		font-style: italic;
-		font-variant: normal;
-		font-weight: 800;
-		line-height: 26.4px;
-		color: #bf2126;
-	}
-
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		color: #bf2126;
-		font-size: 10pt;
+		font-size: 15pt;
+		line-height: 1.4;
 	}
 
 	a {
@@ -562,9 +569,91 @@ p {
 		list-style: none;
 	}
 
+	a.active {
+		color: red;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		/* margin-bottom: 100px; */
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
+	}
+	/*
+.header {
+	width: 100%;
+}
+
+
+
+.nav-bar {
+	justify-content: flex-start;
+	display: flex;
+	background-color: black;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+
+
+.logo img {
+	max-width: none;
+	max-height: none;
+	width: 350px;
+	height: auto;
+	object-fit: cover;
+	padding-top: 100px;
+	margin-left: 100px;
+}
+	.menu {
+	display: flex;
+	gap: 190px;
+	margin-right: 100px;
+	margin-left: 200px;
+}
+
+.menu a {
+	margin-top: 130px;
+	color: white;
+	text-decoration: none;
+	font-size: 23pt;
+	z-index: 10;
+}
+*/
+
+	.header {
+		width: 100%;
+		margin-top: 0px;
+	}
+
 	/* Navigation Bar */
 
 	.nav-bar {
+		margin-bottom: 30px;
 		margin-left: 0px;
 		justify-content: flex-start;
 		display: flex;
@@ -602,67 +691,66 @@ p {
 
 	.twinkle {
 		display: flex;
-		justify-content: start;
-		text-align: right;
-		margin-right: 100px;
-		margin-top: 50px;
+		flex-direction: column-reverse;
+		text-align: left;
+		margin-right: 20px;
+		margin-top: 100px;
+		margin-bottom: 40px;
 	}
 	.twinkleExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: right;
-		margin-right: 200px;
+		text-align: center;
 	}
 	.twinkleExtra p {
 		display: flex;
 		color: white;
-		text-align: right;
-		padding-top: 5px;
-		margin-left: 30px;
+		text-align: center;
+		padding-top: 30px;
+		margin-left: 20px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
+
 	.twinkleExtra h1 {
 		display: flex;
-		justify-content: right;
-		text-align: right;
-		margin-left: 30px;
+		text-align: center;
+		margin-left: 125px;
 		margin-top: 50px;
-		padding-left: 0px;
+		margin-bottom: 10px;
 	}
 
 	.twinkle img {
 		display: flex;
+		display: inline-block;
 		justify-content: start;
-		align-items: left;
-		width: 250px;
-		height: 250px;
-		margin-left: 0px;
-		margin-right: 0px;
+		width: 400px;
+		margin-left: 20px;
+		margin-right: 170px;
 	}
 
 	/* second image */
 
 	.school {
 		display: flex;
+		flex-direction: column;
 		justify-content: start;
-		text-align: left;
-		margin-right: 100px;
+		text-align: center;
 	}
 	.schoolExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
 		text-align: left;
-		margin-right: 0px;
 	}
 	.schoolExtra p {
 		display: flex;
 		color: white;
-		text-align: left;
-		padding-top: 10px;
-		padding-left: 20px;
-		padding-right: 0px;
+		text-align: center;
+		padding-top: 30px;
+		padding-left: 0px;
+		margin-right: 20px;
+		margin-left: 20px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	.schoolExtra h1 {
@@ -670,62 +758,70 @@ p {
 		justify-content: left;
 		text-align: left;
 		margin-left: 0px;
-		margin-top: 90px;
-		margin-left: 20px;
-		margin-right: 90px;
+		margin-top: 20px;
+		margin-left: 103px;
+		margin-bottom: 15px;
+		margin-right: 50px;
 	}
 
 	.school img {
-		display: flex;
-		display: inline-block;
 		justify-content: start;
 		align-items: left;
-		width: 250px;
-		height: 250px;
-		margin-top: 50px;
+		width: 400px;
+		padding-left: 0px;
+		margin-right: 0px;
+		margin-left: 30px;
 	}
 
 	/* third image */
 
 	.studeren {
+		flex-direction: column-reverse;
 		display: flex;
 		justify-content: start;
-		text-align: left;
-		margin-right: 100px;
+		text-align: center;
+		margin-right: 0px;
 	}
 	.studerenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: left;
-		margin-right: 100px;
+		text-align: center;
+		margin-right: 0px;
 	}
 	.studerenExtra p {
 		display: flex;
 		color: white;
-		text-align: left;
-		padding-top: 10px;
-		margin-left: 0px;
+		text-align: center;
+		padding-top: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
 		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom: 0px;
 	}
 	.studerenExtra h1 {
 		display: flex;
-		justify-content: right;
-		text-align: left;
-		margin-left: 0px;
-		margin-top: 0px;
+		text-align: center;
+		margin-left: 100px;
+		margin-top: 50px;
 		padding-left: 0px;
+		height: 40px;
+		width: 190px;
 	}
 
 	.studeren img {
 		display: flex;
+		display: inline-block;
 		justify-content: start;
 		align-items: left;
-		width: 250px;
-		height: 250px;
-		margin-left: 0px;
+		width: 400px;
+		margin-left: 30px;
 		margin-top: 0px;
+		margin-right: 190px;
+		margin-bottom: 0px;
 	}
+
+	/* Mobile Footer */
 
 	footer {
 		flex-direction: column;
@@ -737,6 +833,12 @@ p {
 	}
 	.logo1 {
 		margin: 50px auto;
+		margin-right: 110px;
+	}
+
+	.conotacto h3 {
+		position: relative;
+		right: -10px;
 	}
 	.contact-footer h3 {
 		margin-left: 30px;
@@ -755,6 +857,8 @@ p {
 	}
 
 	.social-icons img {
+		position: relative;
+		right: -10px;
 		display: flex;
 		margin-left: 240px;
 	}
