@@ -418,12 +418,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 15px;
-	/* Reduced gap between text and image */
 	/* padding: 10px; */
 	/* Adjust padding to reduce space around content */
 	text-align: left;
 	margin-right: 10%;
 	
+
 }
 
 .other-image img {
