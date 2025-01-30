@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		{
 			src: "images/Docent.png",
 			title: "KATHY HAEMERS GASTDOCENT&nbsp;2MCT",
-			description: "'''",
+			description:
+				"''Gastdocent UX Service Design Heerlijk om mijn rol in een agency te combineren met lesgeven op EHB. Digital design evolueert razendsnel, ik breng ervaring uit de praktijk mee, en ontmoet elk jaar studenten met slimme nieuwe ideeën, wie weet veelbelovende collega's in de toekomst.''",
 		},
 	];
 
