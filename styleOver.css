@@ -1,0 +1,758 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Normalize */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-family: "Inter", sans-serif;
+	color: white;
+}
+
+h1 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 48pt;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h2 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 40px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h3 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 32px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h4 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h5 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 16px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h6 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 8px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #bf2126;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+	color: #bf2126;
+	list-style: none;
+}
+
+a.active {
+	color: red;
+}
+
+/* Scrolling Banner Styles */
+.scrolling-banner {
+	/* margin-bottom: 100px; */
+	background-color: #bf2126;
+	color: white;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap; /* Prevent text wrapping */
+	padding: 15px 0;
+	box-sizing: border-box;
+	z-index: 1000; /* Make sure it appears above other content */
+}
+
+.scrolling-text {
+	display: inline-block; /* Allow text to scroll smoothly */
+	animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+	padding-left: 100%; /* Start the text off-screen */
+}
+
+/* Keyframes for Scrolling Animation */
+@keyframes scroll-left {
+	from {
+		transform: translateX(0); /* Text starts in the visible area */
+	}
+	to {
+		transform: translateX(-100%); /* Text moves completely out of the banner */
+	}
+}
+/*
+.header {
+	width: 100%;
+}
+
+
+
+.nav-bar {
+	justify-content: flex-start;
+	display: flex;
+	background-color: black;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+
+
+.logo img {
+	max-width: none;
+	max-height: none;
+	width: 350px;
+	height: auto;
+	object-fit: cover;
+	padding-top: 100px;
+	margin-left: 100px;
+}
+	.menu {
+	display: flex;
+	gap: 190px;
+	margin-right: 100px;
+	margin-left: 200px;
+}
+
+.menu a {
+	margin-top: 130px;
+	color: white;
+	text-decoration: none;
+	font-size: 23pt;
+	z-index: 10;
+}
+*/
+
+.header {
+	width: 100%;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	padding: 10px 150px;
+	margin-right: 155px;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+/* Navigation Links */
+.menu {
+	display: flex;
+	gap: 160px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 18pt;
+	font-weight: 100;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #bf2126;
+}
+
+.menu a.active {
+	color: #bf2126;
+	font-weight: 560;
+}
+
+.inschrijvenExtra a:hover {
+	background-color: #8b0000;
+}
+
+.locatieExtra a:hover {
+	background-color: #8b0000;
+}
+
+.infoDagenExtra a:hover {
+	background-color: #8b0000;
+}
+
+a.active {
+	color: red;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #bf2126;
+}
+
+/* Logo */
+
+.logo {
+	flex: 1; /* Push the logo to the left */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-right: 0px;
+	padding-left: 170px;
+}
+
+.logo img {
+	height: 50px; /* Consistent logo size */
+	max-width: none; /* Ensure proper scaling */
+	object-fit: contain; /* Maintain the aspect ratio */
+	padding-right: 0px;
+	padding-left: 100px;
+	width: auto;
+}
+
+/* First Image */
+
+.twinkle {
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+.twinkleExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 200px;
+}
+.twinkleExtra p {
+	display: flex;
+	color: white;
+	text-align: left;
+	padding-top: 30px;
+	margin-left: 165px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.twinkleExtra h1 {
+	display: flex;
+	text-align: left;
+	margin-left: -250px;
+	margin-top: 200px;
+	margin-bottom: 10px;
+	padding-left: 420px;
+	margin-right: 200px;
+}
+
+.twinkle img {
+	display: flex;
+	display: inline-block;
+	justify-content: start;
+	align-items: left;
+	width: 500px;
+	margin-left: 140px;
+	margin-right: 100px;
+}
+
+/* second image */
+
+.school {
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.schoolExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.schoolExtra p {
+	display: flex;
+	color: white;
+	text-align: left;
+	padding-top: 30px;
+	padding-left: 180px;
+	margin-right: 140px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.schoolExtra h1 {
+	display: flex;
+	justify-content: left;
+	text-align: left;
+	margin-left: 0px;
+	margin-top: 150px;
+	margin-left: 180px;
+	margin-bottom: 15px;
+}
+
+.school img {
+	position: relative;
+	top: -100px;
+	justify-content: start;
+	align-items: left;
+	width: 900px;
+	padding-left: 0px;
+	margin-right: 100px;
+}
+
+/* third image */
+
+.studeren {
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.studerenExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.studerenExtra p {
+	display: flex;
+	color: white;
+	text-align: left;
+	padding-top: 30px;
+	margin-left: 360px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.studerenExtra h1 {
+	display: flex;
+	justify-content: right;
+	text-align: right;
+	margin-left: 370px;
+	margin-top: 200px;
+	padding-left: 400px;
+	height: 40px;
+	width: 190px;
+}
+
+.studeren img {
+	display: flex;
+	display: inline-block;
+	justify-content: start;
+	align-items: left;
+	width: 600px;
+	margin-left: 120px;
+	margin-top: 65px;
+}
+
+/* Footer */
+footer {
+	background-color: #c8102e;
+	color: white;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* Ensures equal spacing between items */
+	align-items: flex-start; /* Aligns items to the top */
+	text-align: left;
+	flex-wrap: nowrap; /*Prevents wrapping of items */
+}
+
+footer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+footer p,
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 5px 0;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.logo1 {
+	height: 100px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.contact-footer {
+	margin-left: 700px;
+	margin-top: -100px;
+}
+.contact-footer h3,
+p {
+	text-align: left;
+}
+
+.social-icons {
+	text-align: center;
+	margin-left: 1120px;
+	margin-top: -100px;
+}
+
+.social-icons img {
+	height: 30px;
+}
+
+.social-icons a {
+	padding: 10px;
+}
+
+.navigatie {
+	margin-right: 150px;
+	margin-top: 20px;
+}
+.navigatie a {
+	display: block;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	/* Normalize */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
+	}
+
+	h2 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 40px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h3 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h4 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h5 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 16px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h6 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 8px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #bf2126;
+		font-size: 10pt;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none;
+		color: #bf2126;
+		list-style: none;
+	}
+
+	/* Navigation Bar */
+
+	.nav-bar {
+		margin-left: 0px;
+		justify-content: flex-start;
+		display: flex;
+		background-color: black;
+		text-decoration: none;
+	}
+	.menu a {
+		margin-top: 63px;
+		color: white;
+		text-decoration: none;
+		z-index: 10;
+		font-size: 12pt;
+	}
+
+	/* Logo */
+
+	.logo img {
+		max-width: none;
+		max-height: none;
+		width: 150px;
+		height: auto;
+		padding-top: 50px;
+		margin-left: 20px;
+	}
+
+	/* Navigation Links */
+	.menu {
+		display: flex;
+		gap: 20px;
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	/* First Image */
+
+	.twinkle {
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 100px;
+		margin-top: 50px;
+	}
+	.twinkleExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 200px;
+	}
+	.twinkleExtra p {
+		display: flex;
+		color: white;
+		text-align: right;
+		padding-top: 5px;
+		margin-left: 30px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.twinkleExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 30px;
+		margin-top: 50px;
+		padding-left: 0px;
+	}
+
+	.twinkle img {
+		display: flex;
+		justify-content: start;
+		align-items: left;
+		width: 250px;
+		height: 250px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	/* second image */
+
+	.school {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.schoolExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 0px;
+	}
+	.schoolExtra p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.schoolExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 90px;
+		margin-left: 20px;
+		margin-right: 90px;
+	}
+
+	.school img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 250px;
+		height: 250px;
+		margin-top: 50px;
+	}
+
+	/* third image */
+
+	.studeren {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.studerenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.studerenExtra p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 10px;
+		margin-left: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.studerenExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 0px;
+		padding-left: 0px;
+	}
+
+	.studeren img {
+		display: flex;
+		justify-content: start;
+		align-items: left;
+		width: 250px;
+		height: 250px;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footer-links {
+		text-align: center;
+	}
+	.logo1 {
+		margin: 50px auto;
+	}
+	.contact-footer h3 {
+		margin-left: 30px;
+	}
+	.contact-footer {
+		margin: 150px;
+		margin-left: 160px;
+	}
+	.contact-footer p {
+		padding: 20px;
+		text-align: center;
+	}
+	.social-icons {
+		margin: 100px 0;
+		margin-left: 0;
+	}
+
+	.social-icons img {
+		display: flex;
+		margin-left: 240px;
+	}
+
+	.navigatie {
+		margin: 50px 0;
+		margin-right: 0;
+	}
+
+	.navigatie a {
+		padding: 10px;
+	}
+}

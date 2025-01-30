@@ -1,0 +1,1000 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@media screen and (min-width: 769px) {
+	/* Normalize */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
+		overflow-x: hidden;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 48pt;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h2 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 40px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h3 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h4 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h5 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 16px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h6 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 8px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #bf2126;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none;
+		color: #bf2126;
+		list-style: none;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	li {
+		font-family: Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 15pt;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
+	}
+
+	.header {
+		width: 100%;
+		margin-top: 60px;
+	}
+
+	/* Navigation Bar */
+
+	.nav-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: black;
+		padding: 10px 150px;
+		margin-right: 155px;
+		text-decoration: none;
+		padding-left: 20px;
+	}
+
+	/* Navigation Links */
+	.menu {
+		display: flex;
+		gap: 160px;
+	}
+
+	.menu a {
+		color: white;
+		text-decoration: none;
+		font-size: 18pt;
+		font-weight: 100;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
+	.menu a.active {
+		color: #bf2126;
+		font-weight: 560;
+	}
+
+	.inschrijvenExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.locatieExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.infoDagenExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	a.active {
+		color: red;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
+	/* Logo */
+
+	.logo {
+		flex: 1; /* Push the logo to the left */
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-right: 0px;
+		padding-left: 170px;
+	}
+
+	.logo img {
+		height: 50px; /* Consistent logo size */
+		max-width: none; /* Ensure proper scaling */
+		object-fit: contain; /* Maintain the aspect ratio */
+		padding-right: 0px;
+		padding-left: 100px;
+		width: auto;
+	}
+
+	/* First Image */
+
+	.inschrijven {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+		margin-top: 0px;
+	}
+
+	.inschrijvenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 20px;
+	}
+
+	.inschrijvenExtra p {
+		display: flex;
+		color: white;
+		padding-top: 30px;
+		margin-left: 270px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+		margin-right: 80px;
+	}
+
+	.inschrijvenExtra a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		margin-right: 0px;
+		margin-left: 270px;
+		display: inline;
+		align-self: flex-start;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.inschrijvenExtra h1 {
+		display: flex;
+		justify-content: left;
+		margin-left: 270px;
+		margin-top: 270px;
+		padding-left: 0px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.inschrijven img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 550px;
+		height: 400px;
+		margin-left: 130px;
+		margin-top: 330px;
+		margin-right: 0px;
+		margin-bottom: 300px;
+	}
+
+	/* second image */
+
+	.locatie {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.locatieExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.locatieExtra p {
+		display: flex;
+		align-self: left;
+		align-items: left;
+		color: white;
+		text-align: left;
+		padding-top: 30px;
+		padding-left: 180px;
+		padding-right: 350px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+		margin-right: 500px;
+	}
+
+	.button a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		display: flex;
+		padding-top: 10px;
+		align-self: flex-start;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+		margin-left: 180px;
+	}
+	.locatieExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 270px;
+		padding-left: 180px;
+		height: 40px;
+		margin-bottom: 10px;
+	}
+
+	.map {
+		position: relative;
+		top: -280px;
+		background-color: transparent;
+		width: 600px;
+		height: 400px;
+		margin-left: 920px;
+		margin-right: 200px;
+		flex-shrink: 0;
+	}
+
+	.map a:hover {
+		background-color: transparent;
+	}
+
+	/* third image */
+
+	.infoDagen {
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 100px;
+		margin-top: 0px;
+	}
+	.infoDagenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 120px;
+		margin-left: 20px;
+	}
+	.infoDagenExtra p {
+		color: white;
+		text-align: left;
+		margin-left: 320px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.infoDagenExtra li {
+		text-align: right;
+		margin-bottom: 5px;
+	}
+
+	.infoDagenExtra a {
+		font-family: "Bodoni MT", serif;
+		font-size: 12pt;
+		font-style: italic;
+		font-weight: 800;
+		margin-top: 30px;
+		margin-left: 320px;
+		align-self: flex-start;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+	}
+
+	.infoDagenExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 360px;
+		margin-top: 100px;
+		margin-bottom: 30px;
+		padding-left: 400px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.infoDagen img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 450px;
+		margin-left: 130px;
+		padding-bottom: 150px;
+		padding-top: 0px;
+	}
+
+	/* Fourth Image */
+
+	.contact {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+		margin-top: 70px;
+	}
+	.contactExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+	}
+	.contactExtra p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 180px;
+		margin-right: 470px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.smol p {
+		padding-top: 0px;
+		padding-left: 180px;
+	}
+
+	.smol {
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.contactExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 100px;
+		padding-left: 180px;
+		height: 40px;
+		width: 190px;
+		margin-bottom: 20px;
+	}
+
+	.contact img {
+		width: 700px;
+		margin-left: 0px;
+		margin-bottom: 100px;
+		margin-top: 150px;
+	}
+}
+
+/* Footer */
+footer {
+	background-color: #c8102e;
+	color: white;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* Ensures equal spacing between items */
+	align-items: flex-start; /* Aligns items to the top */
+	text-align: left;
+	flex-wrap: nowrap; /*Prevents wrapping of items */
+}
+
+footer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+footer p,
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 5px 0;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.logo1 img {
+	width: 250px;
+	margin-left: 100px;
+	margin-top: 0px;
+}
+
+.contact-footer {
+	margin-left: 650px;
+	margin-top: -100px;
+}
+.contact-footer h3,
+p {
+	text-align: left;
+}
+
+.social-icons {
+	text-align: center;
+	margin-left: 970px;
+	margin-top: -100px;
+}
+
+.social-icons img {
+	height: 30px;
+}
+
+.social-icons a {
+	padding: 10px;
+}
+
+.navigatie {
+	margin-right: 150px;
+	margin-top: 20px;
+}
+.navigatie a {
+	display: block;
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+	/* Normalize */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
+	}
+
+	h2 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 40px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h3 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h4 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h5 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 16px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h6 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 8px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 26pt;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #bf2126;
+		font-size: 20px;
+		line-height: 1.7;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none;
+		color: #bf2126;
+		list-style: none;
+	}
+	a.active {
+		color: red;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		/* margin-bottom: 100px; */
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
+	}
+	/* Navigation Bar */
+
+	.nav-bar {
+		margin-bottom: 30px;
+		margin-left: 0px;
+		justify-content: flex-start;
+		display: flex;
+		background-color: black;
+		text-decoration: none;
+	}
+	.menu a {
+		margin-top: 63px;
+		color: white;
+		text-decoration: none;
+		z-index: 10;
+		font-size: 12pt;
+	}
+
+	/* Logo */
+
+	.logo img {
+		max-width: none;
+		max-height: none;
+		width: 150px;
+		height: auto;
+		padding-top: 50px;
+		margin-left: 20px;
+	}
+
+	/* Navigation Links */
+	.menu {
+		display: flex;
+		gap: 20px;
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	/* First Image */
+
+	.twinkle {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+
+	.twinkleExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: center;
+	}
+
+	.twinkleExtra p {
+		display: flex;
+		text-align: center;
+		color: white;
+		padding-top: 30px;
+		margin-left: 20px;
+		font-family: Arial, Helvetica, sans-serif;
+
+		margin-right: 40px;
+	}
+
+	.twinkleExtra a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		margin-right: 10px;
+		display: inline;
+		align-self: center;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.twinkleExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 130px;
+		margin-top: 70px;
+		padding-left: 0px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.twinkle img {
+		width: 400px;
+		height: auto;
+		margin-top: 50px;
+		padding-right: 30px;
+		margin-left: 10px;
+	}
+
+	/* second image */
+
+	.school {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		text-align: center;
+	}
+	.schoolExtra {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		text-align: left;
+	}
+	.schoolExtra p {
+		display: flex;
+		color: white;
+		text-align: center;
+		align-self: center;
+		padding-top: 30px;
+		margin-left: 30px;
+		margin-right: 50px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+	.schoolExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 150px;
+		padding-left: 140px;
+		height: 40px;
+	}
+
+	.map {
+		position: relative;
+		top: 50px;
+		flex-shrink: 0;
+		background-color: transparent;
+		width: 370px;
+		height: 400px;
+		margin-left: 30px;
+	}
+
+	.map a:hover {
+		background-color: transparent;
+	}
+
+	/* third image */
+
+	.studeren {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: start;
+		text-align: center;
+		margin-right: 100px;
+		margin-top: 100px;
+	}
+	.studerenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: center;
+		margin-right: 0px;
+	}
+	.studerenExtra p {
+		color: white;
+		text-align: center;
+		margin-left: 90px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.studerenExtra a {
+		font-family: "Bodoni MT", serif;
+		font-size: 12pt;
+		font-style: italic;
+		font-weight: 800;
+		margin-top: 30px;
+		align-self: flex-end;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 30px;
+		margin-right: 35px;
+	}
+
+	.studerenExtra h1 {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin-left: 15px;
+		margin-top: 160px;
+		margin-bottom: 25px;
+		padding-left: 200px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.studeren img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 400px;
+		margin-left: 0px;
+		padding-bottom: 150px;
+		padding-top: 100px;
+	}
+
+	/* Fourth Image */
+
+	.weirdStuff {
+		display: flex;
+		justify-content: column-reverse;
+		text-align: center;
+	}
+	.contact {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.contact p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 180px;
+		margin-right: 500px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.smol p {
+		padding-top: 0px;
+		padding-left: 180px;
+	}
+
+	.smol {
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.contact h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 100px;
+		padding-left: 180px;
+		height: 40px;
+		width: 190px;
+		margin-bottom: 20px;
+	}
+
+	.weirdStuff img {
+		width: 600px;
+		margin-left: 0px;
+		margin-bottom: 100px;
+		margin-top: 150px;
+		margin-left: 0px;
+	}
+
+	/* Mobile Footer */
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footer-links {
+		text-align: center;
+	}
+	.logo1 {
+		margin: 50px auto;
+	}
+	.contact-footer h3 {
+		margin-left: 30px;
+	}
+	.contact-footer {
+		margin: 150px;
+		margin-left: 160px;
+	}
+	.contact-footer p {
+		padding: 20px;
+		text-align: center;
+	}
+	.social-icons {
+		margin: 100px 0;
+		margin-left: 0;
+	}
+
+	.social-icons img {
+		display: flex;
+		margin-left: 240px;
+	}
+
+	.navigatie {
+		margin: 50px 0;
+		margin-right: 0;
+	}
+
+	.navigatie a {
+		padding: 10px;
+	}
+}
