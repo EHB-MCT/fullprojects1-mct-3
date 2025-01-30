@@ -668,6 +668,16 @@ p {
 		font-size: 12pt;
 	}
 
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
+	.menu a.active {
+		color: #bf2126;
+		font-weight: 560;
+	}
+
 	/* Logo */
 
 	.logo img {
